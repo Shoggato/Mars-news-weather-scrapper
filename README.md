@@ -20,7 +20,7 @@ Deliverable 1: Scrape titles and preview text from Mars news articles.
 Deliverable 2: Scrape and analyze Mars weather data, which exists in a table.
 The following DataFrame put together by scraping the HTML titles and excerpts of each article from the website https://static.bc-edx.com/data/web/mars_facts/temperature.html.
 ![Mars Weather DataFrame](/images/deliverable%202%20images/weather_data_df.png)
-![Data Types from weather_mars_df](weather_data_df_dtypes.png)
+![Data Types from weather_mars_df](/images/deliverable%202%20images/weather_data_df_dtypes.png)
 
 
 This DataFrame was then used to answer the following questions.
