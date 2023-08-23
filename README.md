@@ -2,8 +2,8 @@
 
 Table of Contents:
 
- -[Background](#Background)
- -[Deliverables](#Whats)
+ -[Background](#Background)<br>
+ -[Deliverables](#Whats)<br>
  -[Questions](#questions)
 
 # Background
@@ -15,11 +15,11 @@ As you work on this Challenge, remember that you’re strengthening the same cor
 This new assignment consists of two technical products. You will submit the following deliverables:
 
 Deliverable 1: Scrape titles and preview text from Mars news articles.
-![Scrape Preview](/Images/deliverable%201%20images/mars_articles_list_preview.png)
+![Scrape Preview](/images/deliverable%201%20images/mars_articles_list_preview.png)
 
 Deliverable 2: Scrape and analyze Mars weather data, which exists in a table.
 The following DataFrame put together by scraping the HTML titles and excerpts of each article from the website https://static.bc-edx.com/data/web/mars_facts/temperature.html.
-![Mars Weather DataFrame](/Images/deliverable%202%20images/weather_data_df.png)
+![Mars Weather DataFrame](/images/deliverable%202%20images/weather_data_df.png)
 ![Data Types from weather_mars_df](weather_data_df_dtypes.png)
 
 
