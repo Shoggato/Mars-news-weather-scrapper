@@ -1,53 +1,71 @@
-# Mars-news-weather-scrapper
+# RedPlanetExplorer Web Scraper
 
-Table of Contents:
+## Table of Contents:
 
- -[Background](#Background)<br>
- -[Deliverables](#Whats)<br>
- -[Questions](#questions)
+- [Background](#background)
+- [Deliverables](#whats-in-here)
+- [Questions](#questions)
 
-# Background
-You’re now ready to take on a full web-scraping and data analysis project. You’ve learned to identify HTML elements on a page, identify their id and class attributes, and use this knowledge to extract information via both automated browsing with Splinter and HTML parsing with Beautiful Soup. You’ve also learned to scrape various types of information. These include HTML tables and recurring elements, like multiple news articles on a webpage.
+## Background
 
-As you work on this Challenge, remember that you’re strengthening the same core skills that you’ve been developing until now: collecting data, organizing and storing data, analyzing data, and then visually communicating your insights.
+Embark on a comprehensive web-scraping and data analysis project focusing on Mars news articles and weather data. Leverage your skills in automated browsing with Splinter and HTML parsing with Beautiful Soup to collect, organize, analyze, and visually communicate insights from Mars-related information.
 
-# Whats in here?
-This new assignment consists of two technical products. You will submit the following deliverables:
+## Whats in here?
 
-Deliverable 1: Scrape titles and preview text from Mars news articles.
+### Deliverable 1: Mars News Scraper
+
+Scrape titles and preview text from Mars news articles and present them in a structured list.
+
 ![Scrape Preview](/images/deliverable%201%20images/mars_articles_list_preview.png)
 
-Deliverable 2: Scrape and analyze Mars weather data, which exists in a table.
-The following DataFrame put together by scraping the HTML titles and excerpts of each article from the website https://static.bc-edx.com/data/web/mars_facts/temperature.html.
+### Deliverable 2: Mars Weather Analysis
+
+Scrape and analyze Mars weather data from a table. The resulting DataFrame provides insights into Martian atmospheric conditions.
+
+#### Mars Weather DataFrame
+
 ![Mars Weather DataFrame](/images/deliverable%202%20images/weather_data_df.png)
+
+#### Data Types from weather_mars_df
+
 ![Data Types from weather_mars_df](/images/deliverable%202%20images/weather_data_df_dtypes.png)
 
+### Questions
 
-This DataFrame was then used to answer the following questions.
+1. **How many months exist on Mars?**
+   - Evidently, there are twelve months on Mars, each longer than Earth months.
 
+2. **How many Martian (and not Earth) days worth of data exist in the scraped dataset?**
+   - There are 1867 Martian days worth of data in the scraped dataset.
 
-# Questions
+3. **Coldest and Warmest Months on Mars**
+   - Coldest: March
+   - Warmest: August
+   - Visualization: Bar chart of average minimum temperatures.
+   ![Minimal Temperatures on the Mars surface near the rover](/images/deliverable%202%20images/mars_month_temperature_bar.png)
 
-How many months exist on Mars?
-Evidentily there are twelve months on Mars, but they are longer than the months on Earth.
+4. **Months with Lowest and Highest Atmospheric Pressure on Mars**
+   - Lowest: June
+   - Highest: September
+   - Visualization: Bar chart of average atmospheric pressure.
+   ![Mars atmospheric pressure](/images/deliverable%202%20images/mars_month_atmospheric_pressure_bar.png)
 
-How many Martian (and not Earth) days worth of data exist in the scraped dataset?
-There are 1867 days worth of Martian data that has been scraped.
+5. **About how many terrestrial (Earth) days exist in a Martian year?**
+   - There are approximately 680 Earth days per one Martian year.
+   - Visualization: Line chart plotting daily minimum temperatures.
+   ![Martian days plotted with minimal temperatures](/images/deliverable%202%20images/mars_days_line.png)
 
-What are the coldest and the warmest months on Mars (at the location of Curiosity)? To answer this question:
-Find the average the minimum daily temperature for all of the months.
-Plot the results as a bar chart.
-![Minimal Temperatures on the Mars surface near the rover](/images/deliverable%202%20images/mars_month_temperature_bar.png)
-The coldest and warmest months on Mars are March (coldest) and August(warmest).  Still they are still pretty fridged.
+## Usage
 
-Which months have the lowest and the highest atmospheric pressure on Mars? To answer this question:
-Find the average the daily atmospheric pressure of all the months.
-Plot the results as a bar 
-![Mars atmospheric pressure](/images/deliverable%202%20images/mars_month_atmospheric_pressure_bar.png)chart.
-The months that have the lowest atmospheric pressure on mars are June, while the highest atmospheric pressure appears to be September.
+1. Ensure Python and required libraries are installed.
+2. Run `mars_news_scraper.py` for Mars news scraping.
+3. Run `mars_weather_analysis.py` for Martian weather analysis.
+4. Explore the exported CSVs in the `Resources/` directory.
 
-About how many terrestrial (Earth) days exist in a Martian year? To answer this question:
-Consider how many days elapse on Earth in the time that Mars circles the Sun once.
-Visually estimate the result by plotting the daily minimum temperature.
-![Martian days plotted with minimal temperatures](/images/deliverable%202%20images/mars_days_line.png)
-Counting between the first data point starting at zero, and ending at the final data point from eye balling the graph falls somewhere around 680.  So there is about 680 Earth days per one Martian year.  According to google there are 687 Earth days compared to one year on Mars.
+## Contributing
+
+Feel free to contribute by opening issues or submitting pull requests. Your input is highly valued!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
